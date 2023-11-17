@@ -1,0 +1,833 @@
+\documentclass{article}
+\usepackage[a4 paper,top=2cm,left=2cm,right=2cm,bottom=2cm]{geometry}
+\usepackage{blind text}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{cite}
+\usepackage{wrapfig}
+\hypersetup{colorlinks=true,linkcolor=blue,filecolor=magenta,urlcolor=cyan}
+
+
+
+\title{\textbf{\LARGE \boxed{The \enspace Early \enspace Quantum \enspace Mechanics}}}
+\author{\textbf{\LARGE Arijit Das}}
+
+
+
+\begin{document}
+\maketitle
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{0.5pt}
+\pagestyle{fancy}
+\fancyhf{}
+\pagenumbering{roman}
+
+
+\begin{center}
+\textit{\LARGE Department of Physics} 
+\end{center}
+\begin{center}
+\textit{\LARGE Asutosh \enspace College}
+\end{center}
+\begin{center}
+\textit{\LARGE 92 S.P. Mukherjee Road Kolkata-700026}
+\end{center}
+
+\begin{center}
+\textit{\LARGE Affiliated to:}
+\end{center}
+\begin{center}
+
+\textit{\LARGE University \enspace Of \enspace Calcutta}
+\end{center}
+\textbf{\Large Website: \Large \href{www.asutoshcollege.in}{www.asutoshcollege.in}}\enspace\enspace\enspace\enspace\enspace\enspace 
+\textbf{\Large Email: \Large\href{mail@asutoshcollege.in}{mail@asutoshcollege.in}}\\\\
+
+\begin{figure}[h!]
+ \centering
+ \includegraphics[scale=0.14]{pic/CU.png}
+\end{figure}
+
+\begin{center}
+	\textbf{\LARGE Abstract}
+\end{center}
+
+\textit{\Large Quantum Mechanics a branch of physics deals with behaviour of matter and light on the atomic and subatomic scale.It attempts to describe and account for properties of molecules and atoms and their constituents-- electrons,protons,neutrons and other elementary particles.In other words it involves the mathematical description of motion and interaction of subatomic particles incorporating the concepts of quantization of energy,wave-particle duality,the uncertainty principle, and Bohr's correspondance principle.}
+
+\newpage
+\textbf{\Large Unlike Newtonian mechanics or Maxwell's electrodynamics or Einstein's theory of Relativity Quantum theory was not created or even definitely packaged by one individual and it remains to this daysome of the scars of it's exhilarating but traumatic youth.There is no general consensus as to what it's fundamental principles are,how it should be taught or what it really means.}\\
+
+\begin{figure}[h!]
+	\includegraphics[scale=0.11]{pictures/Hes.jpg}
+	{\textit{"\LARGE "Certainly, in the course of time, the splendid things will separate from the hateful."}\textbf{\LARGE -Werner Heisenberg}}
+\end{figure}
+
+\begin{figure}[h!]
+	\includegraphics[scale=0.16]{pictures/De.jpg}
+	{\textit{"\LARGE “We are not sufficiently astonished by the fact that any science may be possible"}\textbf{\LARGE -Louis De Broglie}}
+\end{figure}
+
+\begin{figure}[h!]
+	\includegraphics[scale=0.16]{pictures/Ein.jpeg}
+	{\textit{"\LARGE "The more success the quantum theory has, the sillier it looks"}\textbf{\LARGE -Albert Einstein}}
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[scale=0.16]{pictures/ERN.jpeg}
+	{\textit{"\LARGE "Quantum physics thus reveals a basic oneness of the universe."}\textbf{\LARGE -Erwin Rudolf Josef Alexander Schrödinger}}
+\end{figure}
+
+
+
+\newpage
+\tableofcontents
+\listoffigures
+
+\pagebreak
+
+\fancyhead[LE,RO]{Particle Nature of Radiation}
+\fancyfoot[CE,CO]{\thepage}
+
+\begin{center}
+	\title{\textbf{\underline{\LARGE -:Introduction:-}}}
+\end{center}
+
+{Quantum Mechanics provides the theoretical framework which makes it possible to describe,with reasonably good accuaracy,the behaviour of radiation and matter at microscopic levels.The creation of quantum mechanics is the most outstanding devolopement of modern physics.
+
+The universe consists of two types of entities-matter and radiation.Matter is made up of localized particles.The classical mechanics,formulated by Newton further devoloped by Hamilton,Lagrange and many others,successfully explained the motion of material particles subjected to various type of forces.}
+
+\section{\underline{The Begening:-}}
+
+{The word 'quantum' means a small amount.The reason why quantum mechanics is so diffirent from classical physics is because of the phenomenon 'Quantization'.
+Towards the end of he nineteenth century,physicists had started believing that almost all the fundamental laws of nature have been discoverd and as such, the main task of physics is over.Various branches of physics were unified in a general theoratical framework,now called classical physics,and it was felt that all known or to be discovered physical phenomena can be explained in this framework.
+
+Maxwell devoloped the electromagnetic theory in 1855 which combined electricity,magnetism and optics into a single framework.He showed that all radiations,including light,are electromagnetic waves.The existence of such waves was confirmed experimentally by Hertz in 1887.All waves show interference and diffraction phenomena which were well understood theoratically.} 
+
+\section{\underline{Planck's Radiation Law:-}}
+
+{The 'Quantum Revolution' was started by Max Planck in the year 1900 when he realized that some radical change was required to explain the experimentally observed spectrum of blackbody.After much trial he arrived at the postulate which is known as Plancks's quantum hypothesis:}
+
+\begin{equation}
+		\boxed{E_{n}=$nh$\nu,$n$=0,1,2,...}
+	\end{equation}	
+{where $h$ is a constant,later called the Planck's constant.The quantity $h\nu$ is called a quantum of energy.\\This implies that the particle can emit or absorb electromagnetic energy not continuously in arbitary small amounts,but in multiples of the quantum $h\nu$.}
+
+{Consider all the particles oscilatting with frequency $\nu$.At higher temperature,some of the oscilattors are exited to higher states.At temperature $T$,in equillibrium,the nature of oscillators with energy {$E_n$} is given by the Maxwell-Boltzmann function}
+
+\begin{equation}
+            \boxed{N_{n}=Ne^{-\frac{E_{n}}{kT}}}
+\end{equation}
+
+{The average energy per oscillator is}
+\begin{align*}
+	& \bar{E}=\frac{\sum_{0}^{\infty}E_{n}N_{n}}{\sum_{0}^{\infty}N_{n}}\\
+	&=\frac{\sum_{0}^{\infty}E_{n}e^{-\frac{E_{n}}{kT}}}{\sum_{0}^{\infty}e^{-\frac{E_{n}}{kT}}}\\
+	&=\frac{\sum_{0}^{\infty}E_{n}e^{-E_{n}\beta}}{\sum_{0}^{\infty}e^{-E_{n}\beta}} \quad  (where,\beta=\frac{1}{kT})\\
+	&=\frac{\sum_{0}^{\infty}n\varepsilon e^{-n\varepsilon\beta}}{\sum_{0}^{\infty}e^{-n\varepsilon\beta}} \quad  (where,E_{n}=n\varepsilon)\\
+	&=-\dfrac{d}{d\beta}ln\sum_{0}^{\infty}e^{-\beta n \varepsilon}\\
+	&=-\dfrac{d}{d\beta}ln\frac{1}{1-e^{-\beta \varepsilon}}
+\end{align*}
+\begin{align*}
+	&=\frac{\varepsilon e^{-\beta \varepsilon}}{1-e^{-\beta \varepsilon}}\\	
+	&=\frac{\varepsilon}{e^{\beta \varepsilon}-1}\\
+	&=\frac{h\nu}{e^{\frac{h\nu}{kT}}-1}
+\end{align*}
+{Multiplying it by the Jean's number the energy density of the radiation inside the cavity becomes}
+
+\begin{equation}
+	\boxed{U_{\nu}d\nu=\frac{8\pi \nu^{2}}{c^{3}}\frac{h\nu}{e^{\frac{h\nu}{kT}}-1}=\frac{8\pi h\nu^{3}}{c^{3}}\frac{d\nu}{e^{\frac{h\nu}{kT}}-1}}
+\end{equation}
+{THis is Planck's radiation law.In terms of the wavelenth $\lambda$ of the radiation this becomes}
+
+
+
+
+
+	
+\section{\underline{Dual Nature:-}}
+{Initially, the properties of matter or light were explained in terms of its particle nature. Corpuscular theory of light, etc. were some of the primitive steps that influenced this. Later on, it was experimentally found out that matter does possess the properties of a wave. Hence, the matter is said to possess dual nature, i.e., it has both the properties of a particle and as well as a wave.Maxwell’s equation of electromagnetism and Hertz experiments on the generation and detection of electromagnetic waves in 1887 strongly established the wave nature of light.Thus, the wave-particle duality is an important concept in quantum mechanics which describes that every particle or more specifically quantum entity may be expressed as either a particle or a wave. This concept further helps to modify the inability of the classical mechanic’s approach or theories to fully describe the behaviour of the matter}
+
+
+\subsection{\underline{Some Difficulties about Quantum Mechanics:-}}
+{This dual behaviour of radiation—and also of material particles as we shall see later—raises a serious conceptual
+difficulty. We shall discuss this in the context of the famous Young’s double-slit experiment. Light from a source
+is passed through two close, narrow slits and an interference pattern is observed on a screen. We know that
+this pattern is completely explained by classical wave theory. The pattern does not depend on the intensity of
+the beam. Now, we have just seen that light consists of photons. At first, we might be naturally tempted to
+assume that the interference takes place between different photons passing through the two slits. Now, suppose
+the intensity of the beam is gradually decreased until only one photon is released from the source at a time.
+It is found that the interference pattern still appears, though after a sufficiently long time.If one of the slits is
+closed, the pattern disappears. This is strange. How is it that a stream of photons, coming one at a time, each
+of which can go through only one of the two slits, produces an interference pattern only when both the slits
+are open. The only possible explanation is that each photon “knows” that there are two slits and it interferes
+with itself! Can we say that a photon splits itself into pieces? No, because all the experimental evidences (e.g.
+Compton effect) are against this possibility. We are forced to accept that classical physics cannot explain this
+phenomenon. The search for an explanation of such conflicting and puzzling situations led to the development
+of quantum mechanics, which is able to describe them well.}
+
+\pagebreak
+
+\fancyhead[LE,RO]{-:Wave Nature of Radiation:-}
+\fancyfoot[CE,CO]{\thepage}
+
+\begin{center}
+	\title{\textbf{\underline{\LARGE Wave Nature of Radiation}}}
+\end{center}
+
+{In 1924 Phd thesis,de broglie postulated the wave nature of electrons and suggested that all matter has wave properties.This concept is known as de-broglie hypotesis,an example of wave particle duality.}
+
+\section{\underline{De-Broglie waves and wavelength}:-}
+{According to de broglie if radiation has particle like properties,then material particles(electron,proton,neutron etc)should posses wave-like properties.
+
+We have seen that a photon of frequency $\nu$ has energy }
+ \begin{equation}
+            E=h\nu
+\end{equation}
+{and momentum,}
+
+\begin{equation}
+            p=\frac{E}{c}=\frac{h\nu}{c}
+\end{equation}
+
+{De Broglie proosed that this relation applies to material particles as well as photons.Thus,de broglie postulated that
+with every material particle a wave os associated,having wavelength}
+
+\begin{equation}
+            \boxed{\lambda=\frac{h}{p} {\textbf{(De Broglie wavelength)}}}
+\end{equation}
+{De broglie was also guided by the analogy of the least-action principalin mechanics and Fermat's principal in optics.
+
+We may write,}
+\begin{equation}
+    {p=\cfrac{h}{k}={\hbar}k}
+\end{equation}
+
+{where k=$2\pi/\lambda$ Thus, the two basic relations of quantum theory are}
+
+\begin{equation}
+    \boxed{E={\hbar}\omega {\textbf{Basic relation of quantum theory.}}}
+    
+\end{equation}
+    
+\subsection{\underline{De broglie wavelength in other forms:-}}
+\textit{{\underline{Non-Relativistic:}}}\\
+
+\textbf{{\underline{In terms of kinetic energy:-}}}\\
+
+{For a nonrelativistic particle of mass m having kinetic energy K,}
+\begin{align*}
+	& K=\frac{p^{2}}{2m} \\
+	\Rightarrow& p=\sqrt{2mK}
+\end{align*}
+
+{Therefore, the de Broglie wavelength can be expressed as:}
+
+\begin{equation*}
+	\boxed{\lambda=\frac{h}{\sqrt{2mK}}}
+\end{equation*}
+
+\textbf{\underline{In terms of accelerating potential:-}}\\
+
+{If a particle of mass $m$ and charge $q$ is accelerated through a potential difference $V$,then,}
+
+
+\begin{equation*}
+	\therefore \boxed{\lambda=\frac{h}{\sqrt{2mqV}}}
+\end{equation*}
+
+{For an electron this yeilds}
+
+\begin{center}
+	$\boxed{\lambda=\frac{12.3}{\sqrt{V}}}$
+\end{center}
+
+\pagebreak
+
+\textit{\underline{Relativistic}:}\\
+
+\textbf{\underline{In terms of Kinetic energy:}}\\
+
+
+{For a particle of rest mass $m_{0}$, the total energy E is given by}
+
+\begin{align*}
+	& E^{2}=p^{2}c^{2}+m_{0}^{2}c^{4} \\
+	\Rightarrow& p=\frac{1}{c}\sqrt{E^{2}-m_{0}^{2}c^{4}}
+\end{align*}
+
+{If K is the kinetic energy of the particle, then $E=K+m_{0}c^{2}$}
+
+\begin{align*}
+	\therefore \enspace& p=\frac{1}{c}\sqrt{(K+m_{0}c^{2})^{2}-m_{0}^{2}c^{4}} \\
+	&=\frac{1}{c}\sqrt{K(K+2m_{0}c^{2})}
+\end{align*}
+
+{The de Broglie wavelength is:}
+
+\begin{equation*}
+	\boxed{\lambda=\frac{h}{p}=\frac{hc}{\sqrt{K(K+2m_{0}c^{2})}}}
+\end{equation*}
+
+
+\textbf{\underline{In terms of accelerating potential:-}}\\
+
+{If a particle has charge q and is accelerated through a potential difference
+	V, then $K=qV$}
+
+\begin{align*}
+	\therefore & \lambda=\frac{hc}{\sqrt{qV(2m_{0}c^{2}+qV)}} \\
+	& = \frac{h}{\sqrt{2m_{0}qV(1+\frac{qV}{2m_{0}c^{2}})}}
+\end{align*}
+
+\begin{equation*}
+\therefore	\boxed{\frac{h}{\sqrt{2m_{0}qV(1+\frac{\alpha}{2})}}}
+\end{equation*}
+{where, $\alpha=\frac{qV}{m_{0}c^{2}}$}
+
+{For an electron this yields}
+
+\begin{align*}
+\therefore	\boxed{{\lambda}={\frac{12.3}{\sqrt{V(1+\frac{\alpha}{2})}}}}
+\end{align*}
+
+\section{\underline{Davisson and Germer's experiment:-}}
+ 
+{This experiment established the correctness of de broglie hypothesis.}\\
+
+{The experimental arrangement is shown in fig the narrow beam produced by heating a filament $c$ is accelerated through a known potential $V$ directed to fall normally towards the surface of a nicked crystal.The scattered electron in diffirent direction are collected by a detector;by rotating it about the crystal.It is biased such that the scatterd electrons with same energy as the incident beam can enter into it.}
+
+\begin{figure}[h!]
+	\includegraphics[scale=0.6]{pictures/Davisson.jpeg}
+    \includegraphics[scale=0.65]{pictures/Davission 5.jpeg}
+    \caption{Figure:-Davisson Germer Experiment}
+\end{figure}
+\endpage
+\newpage
+
+{We can get a result from the above figures that,the intensity of scattered electrons is ploted in a polar graph by taking radius vector proportional to intensity and latitude angle (${\phi}$) as the angle of scattering at low value of $V$ the plot is smooth but at higher value(44$V$),hump appears on the plot,which is maximum for $V$=54$V$ and ${\phi}$=50 on further increase of voltage the hump decreases and disappears for higher voltages.}
+
+\section{\underline{Heisenberg's Uncertainty Principal:-}}
+{In classical mechanics the position and the momentum of a particle are independent of each other and can be simultaneously measured precisely.In quantum mechanics,a particle is represented by a wave packet.The position and the momentum of the particle is indeterminate within the region where the momentum wave function $\phi(p)$ is non-zero.}\\
+{An important question arises is:How precisely we can determine the position and the momentum of a particle simultaneously?}
+
+{Using the relation ${\hbar k=p}$,we obtain}
+
+\begin{equation}
+    \boxed{{\Delta x}{\Delta p}\geq\hbar}
+\end{equation}
+
+{This is \textbf{Heisenberg's uncertainty relation for position and momentum.}It states that "it is not possible to specify both the position and the momentum of a particle simultaneously wit arbitrary precision;the product of the uncertainties in the position and the momentum is always greater than a quantity of order $\hbar$"}
+
+
+\begin{figure}[h!]
+    \centering
+	\includegraphics[scale=0.7]{pictures/UNCER.jpeg}
+\end{figure}
+
+\pagebreak
+
+{Let measure the position of an object with photons of $\lambda$ wavelength.So position can be measured at best to an accuracy $\sim \lambda$.So the uncertainty $\Delta$x in measurement of position is $\Delta x\sim \lambda$ }\\	
+	
+{Let the object is determined by single photon of momentum $p=\frac{h}{\lambda}$.On striking the object, the photon transfers a part or whole of momentum to the object.So final momentum is uncertain by an amount, $\Delta p_{x}\simeq \frac{h}{\lambda}$}	\\
+
+{So the product of two uncertainties give: $\Delta x\Delta p_{x}\simeq h$}\\
+
+{The relation can easily generalized to three dimensions:}
+
+\begin{center}
+	$\boxed{\Delta x\Delta p_{x}\geq {\hbar}}$ \\
+    $\boxed{\Delta y\Delta p_{y}\geq {\hbar}}$ \\
+    $\boxed{\Delta z\Delta p_{z}\geq {\hbar}}$ \\	
+\end{center}
+
+{It is important to note that there is no uncertainty relation between one cartesian component of the position vector of a particle and a diffirent cartesian component of the momentum.The restrictions are only on the complimentary pairs.}
+\subsection{\underline{Other Uncertainty Relations:-}}
+{The position-momentum uncertainty relation can be used to obtain another uncertainty relation-the one involving energy and time that is }
+
+\begin{equation}
+    \boxed{\Delta E\Delta t \geq {\hbar}}
+\end{equation}
+
+{We can have another relation based on angular momentum and angle that is}
+
+\begin{equation}
+    \boxed{\Delta L\Delta {\theta}\geq {\hbar}}
+\end{equation}
+
+{It must be kept in mind that the limitations on measurement imposed by the uncertainty principal have nothing to do with the experimental erros that occur in actual measurements.Further,the smallness of {\hbar} ensures that the uncertainty principal is relevant only for systems of atomic dimensions.No results of classical mechanics are affected for macroscopic bodies.}
+
+\section{\underline{Basic Postulates of Quantum Mechnics:-}}
+
+{The following postulates are formulated for studying the system as well as governs the study of the system.}
+
+\subsection{\underline{1^{st} \Large{Postulate :-}}}
+{The state of a quantum mechanical system is completely determined by a function $\LARGE\Psi(r,t)$ that depend on the coordinate of the particle as well as of time. This function is known as wave function and has a property $\large{\Psi^*(r,t)\Psi(r,t)d\tau}$ , this is the probability of finding the particle in the volume element $d\tau$ located at 'r' at time 't'. }
+{the wave function must satisfy certain mathematical condition because of the probabilistic interpretation .Thus the total probability of finding the particle in an volume element $ d \tau $ is\\ 1. Mathematically  it can be represented as follows:-}
+
+\begin{center}
+$\boxed {\int_{-\infty}^{\infty}\Psi^*(r,t) \Psi(r,t) d\tau =1}$
+\end{center}
+{It is customary to also normalize many-particle wave functions to 1.The wave function must also be single-valued, continuous, and finite.}
+
+\subsection{{\underline{2^{st} \Large{Posulate:-}}}}
+{For every measurable quantity property of system such as position , momentum , energy ,etc there exist a corresponding operator in quantum mechanics . An experiment in laboratory to measure a value of such an observable is simulated in the theory by operating on the wave function of the system with corresponding operator. }
+{Once $\LARGE{\Psi(r,t)}$ is known , then all properties of the system can be obtained by operating different operator on the wave function.Observed in the measurement are only the eigenvalues { \^{a}} of the operator {{\^{A}}and must satisfy the eigenvalue equation : }
+
+\begin{center}
+$\boxed{\^{A}\Psi(r,t)=\^{a}\Psi(r,t)}$
+
+\end{center}
+
+\newpage
+\fancyhead[LE,RO]{Postulates of Quantum Mechanics}
+
+\begin{center}
+  \boxed{ \includegraphics[scale=1.1]{pictures/operator.jpg}}
+     \caption{\underline{{Some \enspace Quantum \enspace Mechanical\enspace Operator}}}
+\end{center}
+
+
+\subsection{{\underline{3^{st} \Large{Postulate:-}}}}
+{To every observable in classical mechanic there exist an linear ,hermitian operator in quantum mechanics .}
+{This postulate comes from observation that the \underline{expectation value} of an operator must be Hermitian . Thus if $\^{A}$ operator has real expectation value then the operator $\^{A}$ must be a hermitian operator .}\\
+{{\underline{{Expection} \enspace Value:-}}}
+{In quantum mechanics, the expectation value is the probabilistic expected value of the result (measurement) of an experiment. It is not the most probable value of a measurement; indeed the expectation value may have zero probability of occurring. It is a fundamental concept in all areas of quantum physics.}
+
+\subsection{{\underline{4^{st} \Large{Postulate:-}}}}
+{The independent wave function of an time independent  Hamiltonian are found by solving time independent Schrödinger equation. }
+\begin{center}
+    \boxed{\LARGE{$\^{H}(r)\Psi (r)=E \Psi (r)$}}
+\end{center}
+{These wave fuctions are called stationary states becausenthe property of the system is in such a state is describe by $\Psi (r)$ which is independent of time.} 
+
+\subsection{{\underline{5^{st} \Large{Postulate:-}}}}
+{The time evolution or time dependence of the state is found by solving the time dependent Schrödinger equation .}
+\begin{center}
+    \boxed{\LARGE{$\^{H}(r,t)\Psi (r,t)=i\hslash \frac{\partial\Psi (r,t)}{\partial t}$}}
+\end{center}  
+{$\^{H}$ is time independent of time ,  time dependent part of wave function is e^{-i$\omega$ t} , were \enspace $\omega=\frac{E}{\hslash}$, wich shows that the , which shows that the energy-frequency relation used by Planck, Einstein, and Bohr results from the time-dependent Schrödinger equation. This oscillatory time dependence of the probability amplitude does not affect the probability density or the observable properties because in the calculation of these quantities, the imaginary part cancels in multiplication by the complex conjugate.}
+
+\subsection{{\underline{6^{st} \Large{Postualte:-}}}}
+{If a system is describe by a wave function $\Psi$ ,wich is not an eigenfunction of an operator \^{A} the average value of the observable property is given by the expectation value integral,}
+\begin{center}
+\boxed{<A>=  \frac{\int \Psi ^*\^{A}\Psi d\tau}{\int \Psi^*\Psi d\tau}}    
+\end{center}
+\endpage\newpage
+\fancyhead[LE,RO] {Schrödinger equation}
+\section{\LARGE{\underline{{Schrödinger equation:-}}}}
+
+{Thus from above postulates it is clear that schrödinger
+equation is a mathematical expression describing the energy and position of the electron in space-time,taking into account the matter wave nature of the electron inside an atom.} 
+{it is obvious that the equation cannot be derived , like all fundamental equation of physics , it must be guessed and arrived or arrived at in a heuristic manner .
+	
+Thus the equation must satisfy the following conditions :}
+\begin{equation}
+    \boxed{H(t)|{\psi}(t)}
+\end{equation}
+\endline
+\newline
+\begin{enumerate}
+    \item It must be linear and homogeneous so that the superposition principle holds . That is , if  $\Psi _1 and \Psi_2$ are solutions of the equation , any linear combination $a_1\Psi_1+a_2\Psi_2$ must also be a solution.
+    \item It must be  a first order differential equation with respect to time , so that the evolution of the wave function can be completely determined if the wave function is known at given initial time.
+    \item It must be consistence with the Plank-Einstein relation $\LARGE{E = \hslash \omega}$
+    , the DE-Brogoli relation $\LARGE{P=\hslash K}$ , and the correspondence principle.
+
+\end{enumerate}
+
+{There are two types of equations}
+
+\subsection{\underline{Time Dependent Schrödinger equation:-}}
+
+{Let us assume one-dimensional motion of a free particle of mass m ,  moving in the positive x-direction with momentum p and energy E. Such monochromatic plane wave }
+\begin{center}
+\boxed{\LARGE{{\Psi(x,t)=Ae^{i(px-Et/\hslash)}}}} 
+\end{center}
+{Were A is constant . Differentiating with respect to t , we have }
+\begin{center}
+    $\LARGE{ \frac{\partial \Psi}{\partial t} = -\frac{iE}{\hslash} \Psi} $
+    \end{center}
+    \begin{center}
+    $\boxed{\LARGE{i\hslash \frac{\partial \Psi}{\partial t} = E\Psi}}$...(1)
+\end{center}
+{differentiating twice with respect to x , we have}
+\begin{center}
+    $\LARGE{-i\hslash \frac{\partial \Psi}{\partial t} = P \Psi}$
+\end{center}
+\begin{center}
+$\large{-\hslash^2\frac{\partial^2 \Psi}{\partial x^2}=P^2 x}$
+\end{center}
+\begin{center}
+    $\boxed{\LARGE{\frac{-\hslash^2}{2m}\frac{\partial^2 \Psi}{\partial x^2}=\frac{p^2}{2m}\Psi}}$....(2)
+\end{center}
+
+\fancyhead[LE,RO] {Schrödinger equation}
+{for nonrelastivistic free particle }
+\begin{center}
+    $\boxed{\LARGE{E=\frac{p^2}{2m}}}$....(3)
+\end{center}
+{From equation 1,2,3 we get}
+\begin{center}
+    $\boxed{\LARGE{i\hslash \frac{\partial \Psi(x,t)}{\partial t}=-\frac{\hslash^2}{2m}\frac{\partial^2 \Psi(x,t)}{\partial x^2}}}$
+\end{center}
+\endpage
+\newpage
+{The above equation satisfy the conditions , the equation is an time dependent one dimensional schrodinger equation .}
+{for 3 dimension the equation would we written as :}
+\begin{center}
+    $\boxed{\LARGE{i\hslash \frac{\partial \Psi(r,t)}{\partial t}=-\frac{\hslash^2}{2m}\nabla^2\Psi(r,t)}}$
+\end{center}
+{were}
+\begin{center}
+    $\LARGE{\nabla^2=\frac{\partial^2}{\partial x^2}+\frac{\partial^2}{\partial y^2}+\frac{\partial^2}{\partial z^2}}$
+\end{center}
+
+\subsection{{\underline{ Time-Independent Schrödinger Equation:-}}}
+{When in a system the potential energy $\bold{V}=V(r)$ is constant with time or does not depend on time then the solution of the schrodinger equation become simpler due to the ability of the use of separation of variables method.}
+{Let us assume that the wave function $\Psi(r,t)$ can be written as a product of two functions as a position function only $\Psi(r)$ and a function of time only,f(t):}
+\begin{center}
+    $\boxed{\LARGE{\Psi(r,t)=\Psi(r)f(t)}}$
+\end{center}
+{Then the time dependent schrodingereq can be re written as }
+\begin{center}
+    $\LARGE{i\hslash \Psi(r) \frac{d f(t)}{dt}=f(t)[-\frac{\hslash^2}{2m}\nabla^2+V(r)]\Psi(r)}$
+\end{center}
+{dividing both side by $\Psi(r)$f(t), we get}
+\begin{center}
+    $\LARGE{i\hslash \frac{1}{f(t)} \frac{df(t)}{dt}=\frac{1}{\psi(r)}[\frac{-\hslash^2}{2m}\nabla^2+V(r)]\Psi(r)}$
+\end{center}
+{we can shoe that in the above equation $i\hslash\frac{d f(t)}{dt}=Ef(t)$ were E is the energy.Thus the equation can now be written as:}
+\begin{center}
+    $\boxed{\LARGE{[-\frac{\hslash^2}{2m}\nabla^2+V(r)]\Psi(r)=E\Psi(r)}}$
+\end{center}
+{or}
+\begin{center}
+    $\boxed{\LARGE{H\Psi(r)=E\Psi(r)}}$
+
+\end{center}
+\begin{center}
+     H= $-\frac{\hslash^2}{2m}+V(r)$,Hamiltonian operator
+\end{center}
+
+{Lastly,Schrödinger equation does computes the wavefunction deterministically.But the information it contains is proabilistic.This idea that nuture is probabilistic is a lot for the scientific community to handle at that time.}
+
+\endpage
+\newpage
+
+\fancyhead[LE,RO]{ Free Paricle in diffirent Dimensional Box}
+\section{\underline{ Free Particle In Diffirent Dimensional Box:-}}
+{Till now we have solved the Schrödingerequation for a free particle.As expectedthe eigenfunctions are plane waves and the energy spectrum is continuous,ranging from,E=0 to E=+${\infty}$.We shall now study the motion of a particle which is confined in a region of constant potential energy.}
+
+\subsection{\underline{Particle In 1-Dimensional Box}}
+{Let us consider a particle of mass m confined in a region of width 2a from x =-a to x =+a by impenetrable walls , such a system is also called \textbf{one dimensional box.} Inside the box the particle is free thus the potential energy can be described as  }
+
+\begin{center}
+    $\boxed{V(x)=0,|x|<a},\boxed{V(x)=\infty,|a|>a}$
+\end{center}
+
+\begin{center}
+   \boxed{\includegraphics[scale=0.56]{pictures/1 d.jpg}}
+    \caption{\underline{{Particle\enspace in\enspace One\enspace Dimensional\enspace Box}}}
+\end{center}
+
+{In order to find the eigenfunctions and energy eigenvalues for this system,we have to solve the time-dependent Schrödinger equation}
+
+\begin{center}
+    $\boxed{\frac{-\hslash^2}{2m} \frac{d^2 \Psi(x)}{dx^2}+V(x)\Psi(x)=E\Psi(x)}$
+\end{center}
+
+{Since potential energy is infinite at x=(+a,-a),the probability of finding the particle outside the wall is zero.Thereforethe wave function ${\Psi}(x)$ must vanish at the walls:}
+
+\begin{center}
+    ${\Psi}(x)=0$ at $x=(+a,-a)$
+\end{center}
+{Thus the equation can be reduced as:}
+
+\begin{center}
+    $\LARGE{-\frac{\hslash^2}{2m} \frac{d^2 \Psi}{d x^2}=E\Psi}$
+\end{center}
+\begin{center}
+    $\frac{d^2 \Psi}{d x^2}+k^2\Psi=0....(1)$ ; $k^2=\frac{2mE}{\hslash^2}....(2)$
+\end{center}
+\endpage
+\newpage
+\fancyhead[LE,RO]{Particle in 1 dimensional box}
+
+{$\boxed{\Psi(x)=0}$ at $x=a=-a$ , thus the equation can be reduced as:}
+\begin{center}
+    $\boxed{-\frac{\hslash^2}{2m} \frac{d^2 \Psi}{d x^2}=E\Psi}$
+\end{center}
+\begin{center}
+    $\frac{d^2 \Psi}{d x^2}+k^2\Psi=0$....(1) ; $k^2=\frac{2mE}{\hslash^2}....(2)$
+\end{center}
+{the solution of the equation is given as }
+\begin{center}
+${\boxed{\Psi(x)=A sin(kx)+B cos (kx)}}$
+\end{center}
+{at x=a}
+\begin{center}
+  $\LARGE{0= A sin(ka) + B cos(ka)}$  
+\end{center}
+{at x=-a}
+\begin{center}
+  $\LARGE{0= - A sin(ka) + B cos(ka)}$  
+\end{center}
+
+{Thus}
+\begin{center}
+$A sin(ka)=0$ ,  $B sin(kx)=0$
+\end{center}
+{taking the initial condition such that B=0 , sin(ka)=0, thus to satisfy the condition , $ka=\frac{n \pi}{2}$}
+{Thus the wavefunction will be :}
+\begin{center}
+${\LARGE\boxed{\Psi_n (x)=A sin(\frac{n \pi x}{2a})}}$
+\end{center}
+{Normalizing the function }
+\begin{center}
+    \LARGE{\[\int_{-a}^{a}\Psi_n(x)^* \Psi_n(x)dx=1\]}
+\end{center}
+
+{so}
+\begin{center}
+    \boxed{\LARGE{A^2\int_{-a}^{a}sin^2 \frac{n \pi x }{2a}dx=1}}
+\end{center}
+{Thus after solving the equation we obtain}
+\begin{center}
+\boxed{A=\frac{1}{\sqrt{a}}}
+\end{center}
+
+{Thus the wave function can be determined as }
+\begin{center}
+    $\LARGE{\boxed{\Psi_n(x)=\frac{1}{\sqrt{a}} sin \frac{n \pi x }{2a}}}$ , $n=2,4,6,...$
+\end{center}
+\endpage
+\newpage
+
+{on plotting the wavefunction as a function of x}
+ \begin{center}
+   \boxed{ \includegraphics[scale=0.6]{pictures/1D-1.jpg}}
+    \caption{\large\underline{{Wave function \enspace and \enspace Probability \enspace Distribution.}}}
+\end{center}
+
+{We can allowed to have a value of k as  }
+\begin{center}
+ {$k_n=\frac{n \pi}{2a}$, n=1,2,3...}
+ \end{center}
+ {energy of the system can be determined by }
+\begin{center}
+ $\boxed{E_n=\frac{\hslash^2 k_n ^2}{2m}=\frac{n^2 \pi^2 \hslash^2}{8m a^2}}$
+ \end{center}
+
+ \begin{center}
+   \boxed{ \includegraphics[scale=2.0]{pictures/1D-2.jpg}}
+    \caption{\large\underline{{Energy \enspace level \enspace different \enspace at \enspace 'n'}}}
+\end{center}
+
+
+
+
+\endpage
+\newpage
+\fancyhead[LE,RO]{Particle In 2- Dimensional Box}
+\subsection{\LARGE{\underline{Particle
+In 2- Dimensional Box:-}}}
+
+{Let us consider a mass m confined in a two dimensional box 0<x<a and 0<y<b.Thus the following the system can be described as a wavefunction $\Psi$ thus V(x,y)=0 , since the walls are impenetrable so the wavefunction $\Psi(x,y)=0$ at the wall. }
+\begin{center}
+   \boxed{ \includegraphics[scale=0.9]{pictures/2d.jpg}}
+\end{center}
+
+{ two-dimensional time-independent Schrödinger equation}
+\begin{center}
+$\large{\boxed{-\frac{\hslash^2}{2m}(\frac{\partial^2 \Psi(x)}{\partial x^2}+\frac{\partial^2 \Psi(y)}{\partial y^2 })+V(x,y)\Psi(x,y)=E\Psi(x,y)}}$    
+\end{center}
+{the particle in a 2D box since we know that  V(x,y)=0  within the box and  V(x,y)=$\infty$ outside the box . The above equation can written as: }
+\begin{center}
+ $\large{\boxed{-\frac{\hslash^2}{2m}(\frac{\partial^2 \Psi(x)}{\partial x^2}+\frac{\partial^2 \Psi(y)}{\partial y^2 })=E\Psi(x,y)}}$    
+\end{center}
+
+{we try a product wavefunction like in the separation of variables approach used to separate time-dependence from the spatial dependence previously. Within this approach we express the 2-D wavefunction as a product of two independent 1-D components.}
+\begin{center}
+    $\Psi(x,y)=X(x)+Y(y).$
+\end{center}
+{ subsituting separates Equation on the equation: }
+\begin{center}
+    $\largeE{\boxed{-\frac{\hslash^2 }{2m} \frac{d^2 X(x)}{dx^2}=\epsilon_x X(x)}}$
+\end{center}
+\begin{center}
+    $\large{\boxed{-\frac{\hslash^2 }{2m} \frac{d^2 Y(y)}{dy^2}=\epsilon_y Y(y)}}$
+\end{center}
+
+{The differential equations. They have the general solution}
+
+\begin{center}
+    \large{\boxed{$X(x)=A_xsin(k_x x)+B_x sin(k_x x)$}}
+\end{center}
+\begin{center}
+    \large{\boxed{$Y(y)=A_ysin(k_y y)+B_y sin(k_y y)$}}
+\end{center}
+
+{By applying the boundary conditions.The solutions can be implified to address boundary conditions dictated by the potential, i.e.,  ψ(0,y)=0  and  ψ(x,0)=0 .Therefore,  Bx=0  and  By=0 .Thus, we can combine these in the equation to construct the wavefunction  ψ(x,y)  for a particle in a 2D box of the form:}
+\begin{center}
+    $\large{\boxed{\Psi(x,y)=Nsin(\sqrt{\frac{2m\epsilon_x}{\hslash^2}x})sin(\sqrt{\frac{2m\epsilon_y}{\hslash^2}y} )}}$
+\end{center}
+{We still need to satisfy the remaining boundary conditions  $\Psi(L,y)=0$  and  $\Psi(x,L)$=0}
+\endpage
+\newpage
+\begin{center}
+    $Nsin(\sqrt{\frac{2m\epsilon_x}{\hslash^2}L})sin(\sqrt{\frac{2m\epsilon_y}{\hslash^2}y)}=0$
+\end{center}
+\begin{center}
+    $Nsin(\sqrt{\frac{2m\epsilon_x}{\hslash^2}x})sin(\sqrt{\frac{2m\epsilon_y}{\hslash^2}L)}=0$
+\end{center}
+{the equation can be satisfied if}
+\begin{center}
+    $sin(\sqrt{\frac{2m\epsilon_x}{\hslash}L})=0$
+\end{center}
+
+{independent of the value of  x equation can be satisfied}
+{These are the same conditions that we encountered for the one-dimensional box, hence we already know the  sin  function in each case can be zero in many places. In fact, these two conditions are satisfied if}
+\begin{center}
+    $\sqrt{\frac{2m\epsilon_x}{\hslash}L}=n_x
+    \pi$
+\end{center}
+\begin{center}
+    $\sqrt{\frac{2m\epsilon_y}{\hslash}L}=n_y
+    \pi$	
+\end{center}
+{which yield the allowed values of $\epsilon_x$ and $\epsilon_y$ as }
+\begin{center}
+    $\large{\epsilon_x=\frac{\hslash^2 \pi^2}{2mL^2}n_x^2}$
+\end{center}
+\begin{center}
+    $\large{\epsilon_y=\frac{\hslash^2 \pi^2}{2mL^2}n_y^2}$
+\end{center}
+
+{We need two different integers  $n_x$  and  $n_y$  because the conditions are completely independent and can be satisfied by any two different (or similar) values of these integers.Once the conditions on  εnx  and  εny  are substituted to obtain the wavefunction as}
+\begin{center}
+    $\Psi_(n_x,n_y) (x,y)= N sin(\frac{n_x \pi x}{L})sin(\frac{n_x \pi x}{L})$
+\end{center}
+{on normalising we fin the value of N as , $N=\sqrt{{\frac{4}{{ab}}}}$ . Thus the wavefunction can be determined as.}
+\begin{center}
+  $\large{\boxed{\Psi_(n_x,n_y) (x,y) = \sqrt{{\frac{4}{{ab}}}} sin(\frac{n_x \pi x}{L})sin(\frac{n_x \pi x}{L})}}$  
+\end{center}
+
+\begin{center}
+   \boxed{ \includegraphics[scale=0.3]{pictures/2D-1.jpg}}
+    
+\end{center}
+\endpage
+\newpage
+\fancyhead[LE,RO]{PARTICLE IN 2-DIMENSIONAL BOX}
+
+\begin{center}
+\boxed{ \includegraphics[scale=0.7]{pictures/2D-2.jpg}}
+    \caption{\large\underline{{probability distribution\enspace of \enspace particle \enspace in \enspace 2d \enspace space}}}
+\end{center}
+{Energy of the system}
+\begin{center}
+\Large{\boxed{$E=\epsilon_x+\epsilon_y$}}
+\end{center}
+{Thus the energy can be written as}
+\begin{center}
+$\Large{\boxed{E(n_x,n_y)=\frac{\hslash^2\pi^2}{2ml^2}(n_x^2+n_y^2)}}$
+\end{center}
+
+\subsection{\underline{\LARGE{PARTICLE IN  3 DIMENSIONAL BOX:-}}}
+{Let us now consider the system in a 3 dimensional system  Let us consider a particle with mass m constrain to to movie in a rectangular box  }
+
+\begin{center}
+\boxed{ \includegraphics[scale=0.4]{pictures/3d-1.jpg}}
+    \caption{\LARGE\underline{{ \enspace Particle \enspace in \enspace 3d \enspace Space}}}
+\end{center}
+
+{The origin O is at one corner of the box and the length of the box  \bold{x} direction \bold{y} direction and \bold{z} direction  are a , b and c respectively . Inside the box the potential is 0 and outside the box is is $\infty$. Let a = L_1 , b = L_2 , c = L_3 . $ Thus the wavefunction of the system can be obtained by solving the solving the 3 dimensional time independent wave schrodingerequation .$}
+\begin{center}
+    $\boxed{\LARGE{- \frac{\hslash^2}{2m} \nabla^2 \Psi(x,y,z)=E \Psi(x,y,z)}}$
+\end{center}
+{on substituing the boundary condition we get}
+\begin{center}
+  $\large{\boxed{\frac{\partial^2 \Psi}{\partial x^2}+\frac{\partial^2 \Psi}{\partial y^2}+\frac{\partial^2 \Psi}{\partial z^2}+\frac{2mE}{\hslash^2}\Psi = 0}}$  
+\end{center}
+
+\endpage
+\newpage
+\fancyhead[LE,RO]{Particle im 3-Dimensional Box}
+
+ {on solving the equation by the separation of variables method. We assume that the wacefuncton $\Psi(x,y,z)$ as a component of three functions depend only on of of the coordinate.}
+ \begin{center}
+     $\LARGE{\Psi(x,y,z)=X(x)Y(y)Z(z)}$
+ \end{center}
+	{on subtituting the equation on the solved schrodinger equation we would get }
+	\begin{center}
+	    $\LARGE{\frac{1}{X}\frac{d^2 X}{dx^2}+\frac{1}{Y}\frac{d^2 Y}{dy^2}+\frac{1}{Z}\frac{d^2 Z}{dz^2}+\frac{2mE}{\hslash^2}=0}$
+	\end{center}
+
+{The last term of the above equation is constant. On solving the equation furtur more.}
+\begin{center}
+    $\frac{1}{X} \frac{d^2 X}{dx^2}=-k_x ^2 ,\frac{1}{Y} \frac{d^2 Y}{dy^2}=-k_y ^2 ,\frac{1}{Z} \frac{d^2 Z}{dz^2}=-k_z ^2 $
+    \end{center}
+    {Here $k_x ^2$ , $k_y ^2$ , $k_y ^2$ are constants, this can be reduced as}
+\begin{center}
+    $\LARGE{k_x ^2+k_y ^2+k_y ^2 = \frac{2mE}{\hslash^2}}$
+\end{center}
+{Thus the solution of the equation ,i.e. the wave function is determined as }
+\begin{center}
+  $\LARGE{X(x)=A sin(k_x x)+ B cos(k_x x)}$  
+\end{center}
+
+{By applying the  condition as $X(0)=0$ makes $B=0$ , and boundary condition $X(a)=0$ we get}
+\begin{center}
+    $k_x a =n_x \pi$ , $\large{\boxed{X(x) = \sqrt{\frac{2}{a}} sin (\frac{n_x \pi x}{a})}}$ , $n_x=1,2,3,4,..$
+\end{center}
+{similarly we can get the value of $Y(y)$ and  $Z(z)$ as }
+
+\begin{center}
+    $k_y b =n_y \pi$ , $\large{\boxed{Y(y) = \sqrt{\frac{2}{b} sin (\frac{n_y \pi y}{b})}}}$ , $n_y=1,2,3,4,..$
+\end{center}
+\begin{center}
+    $k_z c =n_z \pi$ , $\large{\boxed{Z(z) = \sqrt{\frac{2}{c}} sin (\frac{n_z \pi z}{c})}}$ , $n_z=1,2,3,4,..$
+\end{center}
+{thus on substituting the constant on the wave function we get the wave function of the system as}
+\begin{center}
+    \large{\boxed{\Psi_{n_x,n_y,n_z}(x,y,z)=\sqrt{\frac{8}{abc}}sin(\frac{n_x \pi x}{a})sin(\frac{n_y \pi y}{b})sin(\frac{n_z \pi z}{c})}}
+\end{center}
+{thus by combining the equations we get the value of energy eigenvalues as }
+\begin{center}
+    $\large{\boxed{E=\frac{\pi^2 \hslash^2}{2ma^2}(n_x ^2+n_y ^2+n_z ^2)}}$
+\end{center}
+\endpage
+\newpage
+
+\begin{center}
+\boxed{ \includegraphics[scale=0.16]{pictures/3D.png}}
+    \caption{\large\underline{{ Probability \enspace Density \enspace of\enspace Particle \enspace in \enspace 3d \enspace Space}}}
+\end{center}
+
+{Thus the now study the different systems with the help of quantum mechanical approach. }
+
+\endpage
+\newpage
+\fancyhead[LE,RO]{Acknowledgement and Reference}
+\section{\underline{\Large{Acknowledgement:-}}}
+{I would like to express my special thanks of gratitude to my Physics teacher \textbf{Parikshit Dutta Sir} as well as my dept. HOD \textbf{Amit.K.Banerjee Sir} who gave the golden oppurtunity to do this wonderful project on the topic \textbf{The Early Quantum Mechanics}.}
+
+\section{\underline{\Large{Reference:-}}}
+{The referece i used to making this project are}
+\item QUANTUM MECHANICS BY MANISH C. JAIN
+\item WWW.LIBRETEXT.com
+
+\begin{center}
+{\LARGE{\boxed{THE \enspace END}}}    
+\end{center}
+\end{document}
+
+
+
+\end{document}
+
