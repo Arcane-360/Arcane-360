@@ -1,0 +1,54 @@
+import pyttsx3
+
+def speak(audio):
+    engine = pyttsx3.init()
+    voices = engine.getProperty('voices')
+    engine.setProperty('voice', voices[0].id)
+    engine.say(audio)
+    engine.runAndWait()
+
+import webbrowser
+import wikipedia
+import speech_recognition as sr
+
+def take_query():
+    while True:
+        query = input("Your command: ").lower()
+        if "open geeksforgeeks" in query:
+            speak("Opening GeeksforGeeks")
+            webbrowser.open("https://www.geeksforgeeks.com")
+        elif "open google" in query:
+            speak("Opening Google")
+            webbrowser.open("https://www.google.com")
+        elif "which day is it" in query:
+            # Implement a function to tell the day
+            pass
+        elif "tell me the time" in query:
+            # Implement a function to tell the time
+            pass
+        elif "bye" in query:
+            speak("Goodbye!")
+            exit()
+        elif "from wikipedia" in query:
+            speak("Checking Wikipedia")
+            query = query.replace("wikipedia", "")
+            result = wikipedia.summary(query, sentences=2)
+            speak("According to Wikipedia:")
+            speak(result)
+        elif "tell me your name" in query:
+            speak("I am your desktop assistant.")
+def take_command():
+    r = sr.Recognizer()
+    with sr.Microphone() as source:
+        print("Listening...")
+        r.pause_threshold = 0.7
+        audio = r.listen(source)
+        try:
+            print("Recognizing...")
+            query = r.recognize_google(audio, language='en-in')
+            print("User command:", query)
+            return query
+        except Exception as e:
+            print(e)
+            print("Please say that again.")
+            return "None"
